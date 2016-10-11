@@ -1,0 +1,56 @@
+<nav>
+	<div class="nav-wrapper white">
+		<a [routerLink]="['']" class="brand-logo pointer">RPZ Makeathon</a>
+		<a data-activates="slide-out" class="button-collapse pointer"><i class="material-icons">menu</i></a>
+		<ul class="right hide-on-med-and-down">
+			<li><a [routerLink]="['']">Home</a></li>
+      <li><a class="dropdown-button" href="#!" data-activates="planning">Planning a RPZ<i class="material-icons right">arrow_drop_down</i></a></li>
+			<li><a class="dropdown-button" href="#!" data-activates="running">Running a RPZ<i class="material-icons right">arrow_drop_down</i></a></li>
+		</ul>
+		<ul id="slide-out" class="side-nav">
+			<li class="logo" [routerLink]="['']" ><div class="brand-logo pointer"><img src="assets/rpz.png" class="responsive-img"></div></li>
+
+			<li >
+				<ul class="collapsible collapsible-accordion" data-collapsible="accordion">
+					<li>
+						<a class="collapsible-header waves-effect waves-grey">Planning a RPZ</a>
+						<div class="collapsible-body">
+							<ul>
+								<li><a [routerLink]="['/planning', 'materials']">Materials</a></li>
+								<li><a [routerLink]="['planning', 'sample-app']">Sample Application for Participants</a></li>
+								<li><a [routerLink]="['planning', 'sample-schedule']">Sample Schedule</a></li>
+							</ul>
+						</div>
+					</li>
+          <li>
+            <a class="collapsible-header waves-effect waves-grey">Running a RPZ</a>
+            <div class="collapsible-body">
+              <ul>
+                <li><a [routerLink]="['/running', 'mechanisms']">Mechanisms</a></li>
+                <li><a [routerLink]="['/running', 'pracitce-feedable-pet']">Practice Feedable Pet</a></li>
+                <li><a [routerLink]="['/running', 'practice-llama']">Practice Llama</a></li>
+                <li><a [routerLink]="['/running', 'programming-slides']">Programming Slides</a></li>
+              </ul>
+            </div>
+          </li>
+				</ul>
+
+			</li>
+		</ul>
+
+	</div>
+</nav>
+
+<ul id="planning" class="dropdown-content">
+	<li><a [routerLink]="['planning', 'materials']">Materials</a></li>
+	<li><a [routerLink]="['planning', 'sample-app']">Sample Application for Participants</a></li>
+	<li><a [routerLink]="['planning', 'sample-schedule']">Sample Schedule</a></li>
+</ul>
+<ul id="running" class="dropdown-content">
+  <li><a [routerLink]="['/running', 'mechanisms']">Mechanisms</a></li>
+  <li><a [routerLink]="['/running', 'pracitce-feedable-pet']">Practice Feedable Pet</a></li>
+  <li><a [routerLink]="['/running', 'practice-llama']">Practice Llama</a></li>
+  <li><a [routerLink]="['/running', 'programming-slides']">Programming Slides</a></li>
+</ul>
+
+
